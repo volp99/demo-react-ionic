@@ -1,0 +1,8 @@
+{
+  "name": "demo-react-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "036c9732"
+}
