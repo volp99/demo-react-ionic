@@ -1,30 +1,36 @@
 import {
     IonButton,
-    IonButtons,
-    IonContent,
+    IonButtons, IonCol,
+    IonContent, IonGrid,
     IonHeader,
     IonIcon,
     IonMenuButton,
-    IonPage, IonSearchbar,
-    IonTitle,
+    IonPage, IonRow, IonSearchbar,
     IonToolbar
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab4.css';
 import React from "react";
-import {bookmarkOutline} from "ionicons/icons";
+import { bookmarkOutline} from "ionicons/icons";
 
 const Tab4: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
+                    <IonGrid className="ion-padding-bottom">
+                        <IonRow>
+                            <IonCol>
+                                <h2>Shop</h2>
+                            </IonCol>
+                        </IonRow>
+                    </IonGrid>
                     <IonButtons slot="primary">
-                        <IonButton onClick={() => {}}>
-                            <IonIcon slot="icon-only" icon={bookmarkOutline} />
+                        <IonButton onClick={() => {
+                        }}>
+                            <IonIcon slot="icon-only"  icon={bookmarkOutline}/>
                         </IonButton>
                     </IonButtons>
-                    <IonTitle>Shop</IonTitle>
                     <IonButtons slot="end">
                         <IonMenuButton autoHide={false} />
                     </IonButtons>
@@ -33,9 +39,9 @@ const Tab4: React.FC = () => {
             </IonHeader>
             <IonContent fullscreen>
                 <IonHeader collapse="condense">
-                    <IonToolbar>
+                  {/*  <IonToolbar>
                         <IonTitle size="large">Tab 4</IonTitle>
-                    </IonToolbar>
+                    </IonToolbar>*/}
                 </IonHeader>
                 <ExploreContainer name="Tab 4 page"/>
             </IonContent>

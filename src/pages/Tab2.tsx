@@ -1,39 +1,35 @@
 import {
-    IonButton,
-    IonButtons,
-    IonContent,
-    IonHeader,
-    IonIcon,
-    IonPage,
+    IonCol,
+    IonContent, IonGrid,
+    IonPage, IonRow,
     IonSearchbar,
-    IonTitle,
     IonToolbar
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 import React, {useState} from "react";
-import {locationOutline} from "ionicons/icons";
 
 const Tab2: React.FC = () => {
     const [searchText, setSearchText] = useState('');
     return (
         <IonPage>
                 <IonToolbar>
-                    <IonButtons slot="primary">
+                    <IonGrid>
+                        <IonRow>
+                            <IonCol>
+                                <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)} placeholder="Cerca"/>
+
+                            </IonCol>
+                        </IonRow>
+                    </IonGrid>
+                {/*    <IonButtons slot="primary" className="ion-align-items-center">
                         <IonButton onClick={() => {
                         }}>
-                            <IonIcon slot="icon-only" icon={locationOutline} />
+                            <IonIcon slot="icon-only" className="ion-padding-bottom" icon={locationOutline} />
                         </IonButton>
-                    </IonButtons>
-                    <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)}
-                                  placeholder="Cerca"/>
+                    </IonButtons>*/}
                 </IonToolbar>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Tab 2</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
                 <ExploreContainer name="Tab 2 page"/>
             </IonContent>
         </IonPage>
