@@ -4,7 +4,8 @@ import {
     IonContent,
     IonIcon,
     IonPage,
-    IonToolbar
+    IonToolbar,
+    IonHeader,
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
@@ -16,6 +17,7 @@ import { IonGrid, IonRow, IonCol } from '@ionic/react';
 const Tab1: React.FC = () => {
     return (
         <IonPage>
+            <IonHeader>
                 <IonToolbar>
                     <IonGrid className="ion-padding-bottom">
                         <IonRow>
@@ -39,6 +41,7 @@ const Tab1: React.FC = () => {
                         </IonButton>
                     </IonButtons>
                 </IonToolbar>
+            </IonHeader>
             <IonContent fullscreen>
                 <ExploreContainer name="Tab 1 page"/>
             </IonContent>

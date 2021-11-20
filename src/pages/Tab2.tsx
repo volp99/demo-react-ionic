@@ -3,7 +3,8 @@ import {
     IonContent, IonGrid,
     IonPage, IonRow,
     IonSearchbar,
-    IonToolbar
+    IonToolbar,
+    IonHeader,
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
@@ -13,6 +14,7 @@ const Tab2: React.FC = () => {
     const [searchText, setSearchText] = useState('');
     return (
         <IonPage>
+            <IonHeader>
                 <IonToolbar>
                     <IonGrid>
                         <IonRow>
@@ -29,6 +31,7 @@ const Tab2: React.FC = () => {
                         </IonButton>
                     </IonButtons>*/}
                 </IonToolbar>
+            </IonHeader>
             <IonContent fullscreen>
                 <ExploreContainer name="Tab 2 page"/>
             </IonContent>
