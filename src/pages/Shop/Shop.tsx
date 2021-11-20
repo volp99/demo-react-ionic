@@ -8,12 +8,11 @@ import {
     IonPage, IonRow, IonSearchbar,
     IonToolbar
 } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab4.css';
+import ExploreContainer from "../../components/ExploreContainer";import './Shop.css';
 import React from "react";
 import { bookmarkOutline} from "ionicons/icons";
 
-const Tab4: React.FC = () => {
+const Shop: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
@@ -49,4 +48,4 @@ const Tab4: React.FC = () => {
     );
 };
 
-export default Tab4;
+export default Shop;

@@ -1,9 +1,15 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import ExploreContainer from "../../components/ExploreContainer";
+import "./Reel.css";
 import React from "react";
 
-const Tab3: React.FC = () => {
+const Reel: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -18,4 +24,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Reel;

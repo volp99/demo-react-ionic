@@ -1,0 +1,26 @@
+.container-post {
+  margin-top: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.container-post .card-info {
+  width: 700px;
+  padding: 0.8rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.container-post .card-info img {
+  width: 30px;
+  border-radius: 100%;
+  float: left;
+}
+.container-post .card-info span {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=Post.module.css.map */
