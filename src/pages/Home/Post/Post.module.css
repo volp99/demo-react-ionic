@@ -3,9 +3,10 @@
   width: auto;
   display: flex;
   justify-content: center;
+  flex-flow: column;
 }
 .container-post .card-info {
-  width: 700px;
+  width: 675px;
   padding: 0.8rem;
   display: flex;
   flex-flow: row;
@@ -14,6 +15,13 @@
   align-content: center;
   align-self: center;
 }
+.container-post .card-info .user {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+}
 .container-post .card-info img {
   width: 30px;
   border-radius: 100%;
@@ -21,6 +29,45 @@
 }
 .container-post .card-info span {
   margin-left: 10px;
+}
+
+.post-image {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-content: center;
+  align-self: center;
+  align-items: flex-start;
+  width: auto;
+}
+.post-image img {
+  width: 675px;
+  height: auto;
+  display: flex;
+}
+.post-image .icons {
+  width: 675px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-flow: row;
+  align-items: start;
+}
+.post-image .icons .icon {
+  margin-left: 1rem;
+}
+.post-image .icons .comment-text {
+  font-size: 15px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .card-info, .icons, .comment {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=Post.module.css.map */

@@ -3,9 +3,11 @@
   width: auto
   display: flex
   justify-content: center
+  flex-flow: column
+
 
   .card-info
-    width: 700px
+    width: 675px
     padding: 0.8rem
     display: flex
     flex-flow: row
@@ -13,6 +15,13 @@
     align-items: center
     align-content: center
     align-self: center
+
+    .user
+      width: 100%
+      display: flex
+      flex-flow: row
+      justify-content: start
+      align-items: center
 
     img
       width: 30px
@@ -22,6 +31,43 @@
     span
       margin-left: 10px
 
+.post-image
+  display: flex
+  justify-content: center
+  flex-flow: column
+  align-content: center
+  align-self: center
+  align-items: flex-start
+  width: auto
+
+  img
+    width: 675px
+    height: auto
+    display: flex
+
+
+  .icons
+    width: 675px
+    padding: 1rem 0.5rem
+    display: flex
+    flex-flow: row
+    align-items: start
+
+    .icon
+      margin-left: 1rem
+
+    .comment-text
+      font-size: 15px
+      display: flex
+      flex-flow: row
+      justify-content: center
+      align-items: center
+      align-content: center
+
+
+@media only screen and (max-width: 420px)
+  .card-info, .icons, .comment
+    width: 100% !important
 
 
 
