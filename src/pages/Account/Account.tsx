@@ -12,7 +12,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import ExploreContainer from "../../components/ExploreContainer";
-import "./Account.css";
+import "./Account.module.sass";
 import React from "react";
 import { addCircleOutline } from "ionicons/icons";
 
