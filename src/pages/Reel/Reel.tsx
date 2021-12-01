@@ -6,7 +6,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import ExploreContainer from "../../components/ExploreContainer";
-import "./Reel.css";
+import "./Reel.module.sass";
 import React from "react";
 
 const Reel: React.FC = () => {
