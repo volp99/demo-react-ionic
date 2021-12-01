@@ -9,7 +9,7 @@ import {
   IonHeader,
 } from "@ionic/react";
 import ExploreContainer from "../../components/ExploreContainer";
-import "./Search.css";
+import "./Search.module.sass";
 import React, { useState } from "react";
 
 const Tab2: React.FC = () => {
