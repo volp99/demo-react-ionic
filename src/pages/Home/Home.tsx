@@ -7,7 +7,6 @@ import {
   IonToolbar,
   IonHeader,
 } from "@ionic/react";
-import "./Home.css";
 import React from "react";
 import { addCircleOutline, heartOutline, sendOutline } from "ionicons/icons";
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
